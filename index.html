@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>PacMan</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="pacman website">
+        <meta name="viewport" content="width=device-width, inital-scale=1">
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+        <header>
+
+            <!-- Navigation bar -->
+
+            <nav>
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#high_scores">HIGH SCORES</a></li>
+                    <li><a href="#how_to_play">HOW TO PLAY</a></li>
+                    <li><a href="#players">PLAYERS</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="home">
+            <div class ="logo">
+                <img src="logo/Pac_man_logo.png" width="800" alt="Bright yellow Pac-man logo">
+            </div>
+
+                <!-- Character assets -->
+
+            <div class="characters">
+                    <div class="character character-pacman"><img src="characters/pacman.gif" width="100" alt="Moving image of pacman eating the enemies"></div>
+                    <div class="character character-blinky"><img src="characters/Blinky.png" width="100" alt="Bright Red ghost"></div>
+                    <div class="character character-pinky"><img src="characters/Pinky.png" width="100" alt="Bright Pink ghost"></div>
+                    <div class="character character-inky"><img src="characters/Inky.png" width="100" alt="Bright turquoise ghost"></div>
+                    <div class="character character-clyde"><img src="characters/Clyde.png" width="100" alt="Bright orange ghost"></div>
+            </div>
+            
+            <h1>INSERT COINS</h1>
+        </section>
+        <hr>
+
+        <!-- Main Leaderboard -->
+
+        <section id="high_scores">
+            <h1>READY!</h1>
+            <h2>THE 10 BEST PLAYERS</h2>
+            <div class="leaderboard">
+                <table>
+                    <tr>
+                        <th>RANK</th>
+                        <th>SCORE</th>
+                        <th>INITIALS</th>
+                    </tr>
+
+                    <tr>
+                        <td>1ST</td>
+                        <td>10,000</td>
+                        <td>JRB</td>
+                    </tr>
+                    <tr>
+                        <td>2ND</td>
+                        <td>9,950</td>
+                        <td>LAB</td>
+                    </tr>
+                    <tr>
+                        <td>3RD</td>
+                        <td>9,000</td>
+                        <td>CJB</td>
+                    </tr>
+                    <tr>
+                        <td>4TH</td>
+                        <td>8,750</td>
+                        <td>KED</td>
+                    </tr>
+                    <tr>
+                        <td>5TH</td>
+                        <td>8,500</td>
+                        <td>JBB</td>
+                    </tr>
+                    <tr>
+                        <td>6TH</td>
+                        <td>7,750</td>
+                        <td>SBB</td>
+                    </tr>
+                    <tr>
+                        <td>7TH</td>
+                        <td>7,250</td>
+                        <td>MLB</td>
+                    </tr>
+                    <tr>
+                        <td>8TH</td>
+                        <td>6,850</td>
+                        <td>AGD</td>
+                    </tr>
+                    <tr>
+                        <td>9TH</td>
+                        <td>6,500</td>
+                        <td>KAD</td>
+                    </tr>
+                    <tr>
+                        <td>10TH</td>
+                        <td>6,250</td>
+                        <td>BOB</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <hr>
+
+        <!-- Tutorial -->
+
+        <section id="how_to_play">
+            <div class="tutorial_chara">
+                <div class="tutorial_pacman"><img src="characters/pacman.gif" width="100" alt="Moving image of pacman eating the enemies"></div>
+                <div class="tutorial_eaten">
+                    <img src="characters/Eaten.png" width="100" alt="blue eaten ghost sprite">
+                    <img src="characters/Eaten.png" width="100" alt="blue eaten ghost sprite">
+                    <img src="characters/Eaten.png" width="100" alt="blue eaten ghost sprite">
+                </div>
+            </div>
+
+            <div class="tutorial_txt">
+                <h1>HOW TO PLAY</h1>
+                <br>
+                <h2>SIMPLY SCORE AS MANY POINTS AS YOU</h2>
+                <p>can eating the small dots all around the maze. 10 points per dot (240 of them). Big points come when you eat 1 of the 4 Big
+                    flashing dots called Energizers worth 50 points located in each corner of the maze</p>
+            </div>
+        </section>
+        <hr>
+
+        <!-- Playable characters -->
+
+        <section id="players">
+            <h1>PLAYERS</h1>
+            <div class="playercharacters">
+                <table>
+                    <tr>
+                        <th></th>
+                        <th>CHARACTER /</th>
+                        <th> NICKNAME</th>
+
+                        <!-- BLINKY -->
+                    <tr>
+                        <td><img src="characters/Blinky.png" width="100" alt="Bright Red ghost"></td>
+                        <td>-SHADOW</td>
+                        <td>"BLINKY"</td>
+                    </tr>
+
+                    <!-- PINKY -->
+
+                    <tr>
+                        <td><img src="characters/Pinky.png" width="100" alt="Bright Pink ghost"></td>
+                        <td>-SPEEDY</td>
+                        <td>"PINKY"</td>
+                    </tr>
+
+                    <!-- INKY -->
+                    <tr>
+                        <td><img src="characters/Inky.png" width="100" alt="Bright turquoise ghost"></td>
+                        <td>-BASHFUL</td>
+                        <td>"INKY"</td>
+                    </tr>
+
+                    <!-- CLYDE -->
+                     
+                    <tr>
+                        <td><img src="characters/Clyde.png" width="100" alt="Bright orange ghost"></td>
+                        <td>-POKEY</td>
+                        <td>"CLYDE"</td>
+                    </tr>
+                </table>
+            </div> 
+
+            <!-- Points Guide -->
+
+            <div class="points">
+                <table>
+                    <tr>
+                        <th>200 PTS</th>
+                        <th><img src="characters/Eaten.png" width="100" alt="blue eaten ghost sprite">
+                        <img src="characters/Eaten.png" width="100" alt="blue eaten ghost sprite">
+                        <img src="characters/Eaten.png" width="100" alt="blue eaten ghost sprite"></th>
+                    </tr>
+                    <tr>
+                        <th>50 PTS</th>
+                        <th><img src="sprites/50pts.png" width="75" alt="yellow square sprite"></th>
+                    </tr>
+                    <tr>
+                        <th>10 PTS</th>
+                        <th><img src="sprites/10pts.png" width="25" alt="yellow square sprite"></th>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <!-- footer -->
+         
+        <footer>
+            This site has no affiliation with the actual pacman game
+        </footer>
+    </body>
+</html>

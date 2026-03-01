@@ -1,0 +1,403 @@
+/*CSS file*/
+@charset "uft-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@font-face {
+    font-family: "PRESS START 2P";
+    src: url(../fonts/prstartk.ttf);
+}
+
+/*Site Defaults*/
+html{
+    background-color: black;
+    color: white;
+    font-family: "PRESS START 2P";
+    margin: 0;
+    scroll-behavior: smooth;
+    align-items: center;
+
+}
+
+body{
+    text-align: center;
+    align-items: center;
+    width: 90%;
+    background-color: black;
+    margin: auto;
+    overflow-x: hidden;
+}
+hr{
+    border-style: dotted;
+    border-width: 0.1vw;
+    color: #ffe218;
+}
+/*Navigation*/
+nav{
+    font-size: 3vh;
+    text-align: center;
+    color: white;
+}
+
+nav ul{
+    text-decoration: none;
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 50px 0 0 50px;
+    font-size: 3vh;
+    text-align: center;
+
+}
+
+li a{
+    text-decoration: none;
+    color: white;
+    transition: color 0.75s;
+
+}
+
+li a:hover{
+    color: #ffe218;
+}
+
+/*Site Styling*/
+#home{
+    margin: 50px auto;
+    display: block;
+    padding-bottom: 10vh;
+}
+
+#home h1{
+    animation-name: insert-coin-blink;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes insert-coin-blink {
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 100;
+    }
+    
+}
+.characters{
+    display: flex;
+    flex-direction: row;
+    padding: 10vh;
+}
+
+/*HOMEPAGE*/
+
+/*Character animations*/
+/*Pacman*/
+.character-pacman{
+    padding-left: 10vh;
+    animation-name: pacmanMove;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+/*Pacman animation */
+@keyframes pacmanMove {
+    0%{
+        transform: translate(95vw, 0%) rotate(180deg);
+    }
+    25%{
+        transform: translate(25vw, 0%) rotate(180deg);
+    }
+    50%{
+        transform: translate(-25vw, 0%) rotate(180deg);
+    }
+
+    100%{
+        transform: translate(-95vw, 0%) rotate(180deg);
+    }
+}
+
+/*Pinky animation*/
+.character-pinky{
+    padding-right: 5vh;
+    animation-name: pinkyMove;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes pinkyMove {
+    0%{
+        transform: translate(95vw, 0%) rotate(0deg);
+    }
+    25%{
+        transform: translate(25vw, 0%) rotate(0deg);
+    }
+    50%{
+        transform: translate(-25vw, 0%) rotate(0deg);
+    }
+
+    100%{
+        transform: translate(-95vw, 0%) rotate(0deg);
+    }
+}
+
+/*Inky animation*/
+.character-inky{
+    padding-right: 5vh;
+    animation-name: inkyMove;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes inkyMove {
+    0%{
+        transform: translate(95vw, 0%) rotate(0deg);
+    }
+    25%{
+        transform: translate(25vw, 0%) rotate(0deg);
+    }
+    50%{
+        transform: translate(-25vw, 0%) rotate(0deg);
+    }
+
+    100%{
+        transform: translate(-95vw, 0%) rotate(0deg);
+    }
+}
+
+/*Blinky animation*/
+.character-blinky{
+    padding-right: 5vh;
+    animation-name: blinkyMove;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes blinkyMove {
+    0%{
+        transform: translate(95vw, 0%) rotate(0deg);
+    }
+    25%{
+        transform: translate(25vw, 0%) rotate(0deg);
+    }
+    50%{
+        transform: translate(-25vw, 0%) rotate(0deg);
+    }
+
+    100%{
+        transform: translate(-95vw, 0%) rotate(0deg);
+    }
+}
+
+/*Clyde animation*/
+.character-clyde{
+    padding-right: 5vh;
+    animation-name: clydeMove;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes clydeMove {
+    0%{
+        transform: translate(95vw, 0%) rotate(0deg);
+    }
+    25%{
+        transform: translate(25vw, 0%) rotate(0deg);
+    }
+    50%{
+        transform: translate(-25vw, 0%) rotate(0deg);
+    }
+
+    100%{
+        transform: translate(-95vw, 0%) rotate(0deg);
+    }
+}
+
+/*HIGH SCORES*/
+#high_scores{
+    padding: 10vh;
+    font-size: 1.5vw;
+}
+
+#high_scores h1{
+    color: #ffe218;
+}
+#high_scores table{
+    text-align: center;
+    display: grid;
+    justify-content: center;
+}
+.leaderboard h1{
+    text-align: center;
+    font-size: 1.5vw;
+    padding-bottom: 0.5vh;
+}
+.leaderboard th{
+    font-size: 2vw;
+    padding: 1.5vw;
+}
+
+.leaderboard td{
+    font-size: 2vw;
+}
+
+/*LEADERBOARD TEXT*/
+/*Orange*/
+.leaderboard tr:nth-child(2),
+.leaderboard tr:nth-child(6),
+.leaderboard tr:nth-child(10){
+    color: #ff9e03;
+}
+/*Red*/
+.leaderboard tr:nth-child(3),
+.leaderboard tr:nth-child(7),
+.leaderboard tr:nth-child(11){
+    color: #ff0400;
+}
+/*Turquoise*/
+.leaderboard tr:nth-child(4),
+.leaderboard tr:nth-child(8){
+    color: #00f7f7;
+}
+/*Pink*/
+.leaderboard tr:nth-child(5),
+.leaderboard tr:nth-child(9){
+    color: #ff61b0;
+}
+
+/*TUTORIAL*/
+#how_to_play{
+    text-align: center;
+    padding: 10vh;
+}
+
+.tutorial_chara{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.tutorial_chara img{
+    padding: 1.5vw;
+}
+
+/* Animations */
+.tutorial_pacman{
+    padding-left: 10vh;
+    animation-name: tutorialpacmanMove;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+/*Pacman animation */
+@keyframes tutorialpacmanMove {
+    0%{
+        transform: translate(-95vw, 0%);
+    }
+    25%{
+        transform: translate(-25vw, 0%);
+    }
+    50%{
+        transform: translate(25vw, 0%);
+    }
+    100%{
+        transform: translate(95vw, 0%);
+    }
+}
+
+/* Eaten animation */
+.tutorial_eaten{
+    padding-right: 5vh;
+    animation-name: eatenMove;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes eatenMove {
+    0%{
+        transform: translate(-95vw, 0%) rotate(0deg);
+    }
+    25%{
+        transform: translate(-25vw, 0%) rotate(0deg);
+    }
+    50%{
+        transform: translate(25vw, 0%) rotate(0deg);
+    }
+
+    100%{
+        transform: translate(95vw, 0%) rotate(0deg);
+    }
+}
+
+/*Text*/
+.tutorial_txt{
+    font-size: 1.5vw;
+}
+
+.tutorial_txt h1{
+    padding-top: 5vh;
+}
+.tutorial_txt h2{
+    color: #ffe218;
+}
+
+/* Characters */
+.tutorial-pacman{
+    display: flex;
+    flex-direction: row;
+}
+
+.tutorial-eaten{
+    display: flex;
+    flex-direction: row;
+}
+
+/*PLAYERS*/
+#players{
+    padding: 10vh;
+    font-size: 1.5vw;
+}
+#players table{
+    text-align: center;
+    display: grid;
+    justify-content: center;
+}
+#players h1{
+    text-align: center;
+    font-size: 1.5vw;
+    padding-bottom: 0.5vh;
+}
+
+/*Player Characters*/
+.playercharacters th{
+    padding-left: 1.5vw;
+}
+.playercharacters tr:nth-of-type(2){
+    color: #ff0400;
+}
+.playercharacters tr:nth-of-type(3){
+    color: #ff61b0;  
+}
+.playercharacters tr:nth-of-type(4){
+    color: #00f7f7;  
+}
+.playercharacters tr:nth-of-type(5){
+    color: #ff9e03;  
+}
+
+/* Points */
+.points{
+    display: grid;
+    justify-content: center;
+}
+
+.points th{
+    padding-top: 1.5vh;
+    padding-left: 1.5vw;
+    padding-bottom: 1.5vh;
+}
+
+/*footer*/
+footer{
+    padding: 5vh;
+}
